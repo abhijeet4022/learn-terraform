@@ -3,5 +3,6 @@ variable "fruits_name" {
 }
 
 output "fruits_name" {
-  value = var.fruits_name[2]
+  //value = var.fruits_name[2]
+  value = element(var.fruits_name, 2)
 }
