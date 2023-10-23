@@ -14,7 +14,7 @@ resource "aws_route53_zone" "frontend" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "frontend-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.frontend.private_ip]
 }
 
@@ -34,7 +34,7 @@ resource "aws_route53_zone" "mongodb" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "mongodb-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.mongodb.private_ip]
 }
 
@@ -54,7 +54,7 @@ resource "aws_route53_zone" "catalogue" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "catalogue-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.catalogue.private_ip]
 }
 
@@ -74,7 +74,7 @@ resource "aws_route53_zone" "redis" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "redis-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.redis.private_ip]
 }
 
@@ -94,7 +94,7 @@ resource "aws_route53_zone" "user" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "user-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.user.private_ip]
 }
 
@@ -114,7 +114,7 @@ resource "aws_route53_zone" "cart" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "cart-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.cart.private_ip]
 }
 
@@ -134,7 +134,7 @@ resource "aws_route53_zone" "mysql" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "mysql-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.mysql.private_ip]
 }
 
@@ -154,7 +154,7 @@ resource "aws_route53_zone" "shipping" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "shipping-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.shipping.private_ip]
 }
 
@@ -174,7 +174,7 @@ resource "aws_route53_zone" "rabbitmq" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "rabbitmq-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.rabbitmq.private_ip]
 }
 
@@ -194,6 +194,6 @@ resource "aws_route53_zone" "payment" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "payment-dev.learntechnology.tech"
   type    = "A"
-  ttl     = "30"
+  ttl     = 30
   records = [aws_instance.payment.private_ip]
 }
