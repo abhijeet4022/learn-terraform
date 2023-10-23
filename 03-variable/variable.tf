@@ -3,5 +3,5 @@ variable "fruit_name" {
 }
 
 output "fruit_name" {
-  value = "var.fruit"
+  value = "var.fruit_name"
 }
