@@ -18,9 +18,13 @@ variable "fruits_name" {
 }
 
 // default = ["apple", "banana"]
-output "fruits_name" {
-  value = var.fruits_name
+output "first_fruit_name" {
+  value = var.fruits_name[0]
 }
+output "second_fruit_name" {
+  value = var.fruits_name[1]
+}
+
 
 
 
@@ -32,8 +36,8 @@ variable "fruit_stock" {
   }
 }
 
-output "fruit_stock" {
-  value = var.fruit_stock
+output "fruit_stock_apple" {
+  value = var.fruit_stock["apple"]
 }
 
 #Map value
