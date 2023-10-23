@@ -45,7 +45,7 @@ variable "fruit_stock_with_price" {
   default = {
     apple = {
       stock = 100
-      price = 30
+      price = "30 INR"
     }
     banana = {
       stock = 200
