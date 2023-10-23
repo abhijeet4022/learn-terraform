@@ -10,7 +10,7 @@ resource "aws_instance" "frontend" {
     Name = "frontend"
   }
 }
-resource "aws_route53_zone" "frontend" {
+resource "aws_route53_record" "frontend" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "frontend-dev.learntechnology.tech"
   type    = "A"
@@ -30,7 +30,7 @@ resource "aws_instance" "mongodb" {
     Name = "mongodb"
   }
 }
-resource "aws_route53_zone" "mongodb" {
+resource "aws_route53_record" "mongodb" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "mongodb-dev.learntechnology.tech"
   type    = "A"
@@ -50,7 +50,7 @@ resource "aws_instance" "catalogue" {
     Name = "catalogue"
   }
 }
-resource "aws_route53_zone" "catalogue" {
+resource "aws_route53_record" "catalogue" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "catalogue-dev.learntechnology.tech"
   type    = "A"
@@ -70,7 +70,7 @@ resource "aws_instance" "redis" {
     Name = "redis"
   }
 }
-resource "aws_route53_zone" "redis" {
+resource "aws_route53_record" "redis" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "redis-dev.learntechnology.tech"
   type    = "A"
@@ -90,7 +90,7 @@ resource "aws_instance" "user" {
     Name = "user"
   }
 }
-resource "aws_route53_zone" "user" {
+resource "aws_route53_record" "user" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "user-dev.learntechnology.tech"
   type    = "A"
@@ -110,7 +110,7 @@ resource "aws_instance" "cart" {
     Name = "cart"
   }
 }
-resource "aws_route53_zone" "cart" {
+resource "aws_route53_record" "cart" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "cart-dev.learntechnology.tech"
   type    = "A"
@@ -130,7 +130,7 @@ resource "aws_instance" "mysql" {
     Name = "mysql"
   }
 }
-resource "aws_route53_zone" "mysql" {
+resource "aws_route53_record" "mysql" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "mysql-dev.learntechnology.tech"
   type    = "A"
@@ -150,7 +150,7 @@ resource "aws_instance" "shipping" {
     Name = "shipping"
   }
 }
-resource "aws_route53_zone" "shipping" {
+resource "aws_route53_record" "shipping" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "shipping-dev.learntechnology.tech"
   type    = "A"
@@ -170,7 +170,7 @@ resource "aws_instance" "rabbitmq" {
     Name = "rabbitmq"
   }
 }
-resource "aws_route53_zone" "rabbitmq" {
+resource "aws_route53_record" "rabbitmq" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "rabbitmq-dev.learntechnology.tech"
   type    = "A"
@@ -190,7 +190,7 @@ resource "aws_instance" "payment" {
     Name = "payment"
   }
 }
-resource "aws_route53_zone" "payment" {
+resource "aws_route53_record" "payment" {
   zone_id = "Z100646411UC397CS7DH3"
   name    = "payment-dev.learntechnology.tech"
   type    = "A"
