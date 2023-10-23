@@ -54,6 +54,6 @@ variable "fruit_stock_with_price" {
   }
 }
 
-output "fruit_stock_with_price" {
+output "apple_price" {
   value = var.fruit_stock_with_price["apple"]["price"]
 }
