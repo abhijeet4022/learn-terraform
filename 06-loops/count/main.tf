@@ -13,7 +13,8 @@ resource "aws_instance" "instances" {
 
   tags = {
     // Name = var.components[count.index]
-    Name = element(var.components, count.index)
+    // Name = element(var.components, count.index)
+    Name = element(["frontend", "mongodb"], 1)
   }
 }
 
