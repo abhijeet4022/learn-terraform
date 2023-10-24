@@ -6,15 +6,17 @@ variable "components" {
 
 resource "aws_instance" "instances" {
 
-  count = length(var.components)
-  ami = "ami-03265a0778a880afb"
-  instance_type = "t3.small"
+  count                  = length(var.components)
+  ami                    = "ami-03265a0778a880afb"
+  instance_type          = "t3.small"
   vpc_security_group_ids = ["sg-01746b650f07ff560"]
 
-  tags = {
+}
+
+  output "element"  {
     // Name = var.components[count.index]
     // Name = element(var.components, count.index)
-    Name = element(["frontend", "mongodb"], 1)
+    value = element(["frontend", "mongodb"], 1)
   }
-}
+
 
