@@ -1,5 +1,7 @@
 // If we want to iterate the same resources multiple time then we will use loops.
 
+# Imp Notes : Count is not preferred because if we touch the current index then it will delete the old resource and create new and this is a disaster in organisation.
+
 variable "components" {
   default = ["frontend", "mongodb"]
 }
