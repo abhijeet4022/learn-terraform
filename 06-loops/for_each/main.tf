@@ -12,7 +12,7 @@ resource "aws_security_group" "allow_tls" {
   name = lookup(each.value, "name", null )
 
   tags = {
-    Name = lookup(each.value, "name", null )
+    Name = each.key
   }
 }
 
