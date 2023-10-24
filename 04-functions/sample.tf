@@ -23,13 +23,5 @@ output "fruit_stock" {
 
 
 
-variable "components" {
-  default = ["frontend", "mongodb"]
-}
-
-output "element"  {
-   value = element(var.components, count.index)
-
-  }
 
 
