@@ -16,7 +16,7 @@ resource "aws_instance" "instances" {
   output "element"  {
     // Name = var.components[count.index]
     // Name = element(var.components, count.index)
-    value = element(["frontend", "mongodb"], 0)
+    value = element(["frontend", "mongodb"], 5)
   }
 
 
