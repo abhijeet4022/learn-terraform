@@ -7,6 +7,9 @@ output "fruit_name" {
   value = element(var.fruits_name, 2)
 }
 
+
+
+
 variable "fruit_stock" {
   default = {
     apple = 100
@@ -16,3 +19,17 @@ variable "fruit_stock" {
 output "fruit_stock" {
   value = try(var.fruit_stock["banana"], 0)
 }
+
+
+
+
+variable "components" {
+  default = ["frontend", "mongodb"]
+}
+
+output "element"  {
+   value = element(var.components, count.index)
+
+  }
+
+
