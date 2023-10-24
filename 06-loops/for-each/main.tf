@@ -3,6 +3,7 @@ variable "components" {
     frontend = { name = "frontend_sg" }
     catalogue = { name = "catalogue_sg" }
     mongodb = { name = "mongodb-sg" }
+    redis = { name = "redis-sg" }
   }
 }
 
