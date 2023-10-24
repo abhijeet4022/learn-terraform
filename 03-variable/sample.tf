@@ -1,3 +1,7 @@
+# Plain Variable.
+# Map variable.
+# List variable.
+
 #Plain Value
 variable "fruit_name" {
   default = "apple"

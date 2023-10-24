@@ -1,6 +1,6 @@
 // If we want to iterate the same resources multiple time then we will use loops.
 
-# Imp Notes : Count is not preferred because if we touch the current index then it will delete the old resource and create new and this is a disaster in organisation.
+# Imp Notes : Count is not preferred because if we touch the current index then it will delete the old resource and create new and this is a disaster in organisation. so to overcome this we will use for-each loop with map variable instead of a list variable. Because list variable will work with index and map variable will work with key.
 
 variable "components" {
   default = ["frontend", "mongodb"]
