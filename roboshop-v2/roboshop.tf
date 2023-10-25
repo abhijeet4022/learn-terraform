@@ -40,7 +40,7 @@ resource "aws_instance" "frontend" {
   vpc_security_group_ids = var.sg
 
   tags = {
-    Name = lookup(each.key, name, null )
+    Name = lookup(each.key, "name", null )
   }
 }
 resource "aws_route53_record" "frontend" {
