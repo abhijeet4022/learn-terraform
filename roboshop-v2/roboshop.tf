@@ -6,9 +6,9 @@ data "aws_ami" "ami" {
   owners = ["973714476881"]
 }
 
-variable "ami" {
-  default = data.aws_ami.ami
-}
+#variable "ami" {
+#  default = data.aws_ami.ami
+#}
 
 variable "instance_type" {
   default = "t3.small"
@@ -41,7 +41,7 @@ variable "components" {
 # Frontend Configuration
 resource "aws_instance" "instance" {
   for_each = var.components
-  ami = var.ami
+  ami = data.aws_ami.ami
   instance_type = var.instance_type
   vpc_security_group_ids = var.sg
 
