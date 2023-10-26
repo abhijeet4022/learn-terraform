@@ -12,47 +12,47 @@ variable "zone_id" {
 variable "component" {
   default = {
     frontend = {
-      name = "frontend"
+      name          = "frontend"
       instance_type = "t2.micro"
     }
     mongodb = {
-      name = "mongodb"
+      name          = "mongodb"
       instance_type = "t2.micro"
     }
     catalogue = {
-      name = "catalogue"
+      name          = "catalogue"
       instance_type = "t3.small"
     }
     redis = {
-      name = "redis"
+      name          = "redis"
       instance_type = "t2.micro"
     }
     user = {
-      name = "user"
+      name          = "user"
       instance_type = "t3.small"
     }
     cart = {
-      name = "cart"
+      name          = "cart"
       instance_type = "t3.small"
     }
     mysql = {
-      name = "mysql"
+      name          = "mysql"
       instance_type = "t3.small"
     }
     shipping = {
-      name = "shipping"
+      name          = "shipping"
       instance_type = "t3.small"
     }
     rabbitmq = {
-      name = "rabbitmq"
+      name          = "rabbitmq"
       instance_type = "t2.micro"
     }
     payment = {
-      name = "payment"
+      name          = "payment"
       instance_type = "t2.micro"
     }
     dispatch = {
-      name = "dispatch"
+      name          = "dispatch"
       instance_type = "t2.micro"
     }
   }
