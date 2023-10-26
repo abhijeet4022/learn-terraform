@@ -1,5 +1,5 @@
 module "components" {
-#loop
+
   for_each = var.component
 
   source        = "./module"
