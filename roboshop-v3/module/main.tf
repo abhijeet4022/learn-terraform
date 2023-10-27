@@ -7,6 +7,7 @@ resource "aws_instance" "instance" {
     Name = var.name
   }
 }
+
 resource "aws_route53_record" "record" {
 
   zone_id = var.zone_id
@@ -16,4 +17,15 @@ resource "aws_route53_record" "record" {
   records = [aws_instance.instance.private_ip]
 }
 
-
+resource "null_resource" "ansible" {
+  depends_on = [
+    aws_route53_record.record
+  ]
+  provisioner "local-exec" {
+    command = <<EOF
+cd /home/centos/roboshop-ansible
+git pull
+ansible-playbook -i ${var.name}-dev.learntechnology.tech, main.yml -e ansible_user=centos -e ansible_password=DevOps321 -e component=${var.name}
+EOF
+  }
+}
