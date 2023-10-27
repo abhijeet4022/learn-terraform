@@ -1,1 +1,1 @@
-tfvars = "dev"
+tfvars = "dev_environment"
