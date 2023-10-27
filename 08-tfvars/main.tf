@@ -1,5 +1,5 @@
 variable "tfvars" {}
 
-output "tfvars" {
+output "vars" {
   value = var.tfvars
 }

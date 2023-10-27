@@ -1,1 +1,1 @@
-tfvars=prod
+tfvars = "prod"
